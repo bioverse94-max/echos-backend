@@ -1,0 +1,32 @@
+# ================================
+# Echoes Backend - Optimized Dependencies
+# OpenRouter + CPU-only setup
+# Python 3.10-3.12
+# ================================
+
+# --- Web Framework ---
+fastapi==0.100.0
+pydantic==2.4.0
+pydantic-settings==2.0.3
+uvicorn[standard]==0.22.0
+
+# --- Core Scientific Stack ---
+numpy==1.26.4
+scikit-learn==1.3.2
+
+# --- Deep Learning (CPU-only) ---
+torch==2.3.1+cpu ; platform_system != "Darwin"
+transformers==4.41.0
+sentence-transformers==2.2.2
+
+# --- OpenRouter API (OpenAI-compatible) ---
+openai>=1.12.0
+
+# --- HTTP Client ---
+httpx==0.24.1
+
+# --- Environment & Config ---
+python-dotenv==1.0.0
+
+# --- Utilities ---
+tenacity==8.2.3
