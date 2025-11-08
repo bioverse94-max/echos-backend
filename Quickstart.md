@@ -53,7 +53,8 @@ USE_LLM_ETYMOLOGY=true
 ### 3. Start Server
 
 ```bash
-uvicorn api.main:app --reload --port 8000
+uvicorn api.main:app --reload --port 8000 #for local system
+uvicorn api.main:app --host 0.0.0.0 --port $PORT #for server
 ```
 
 Expected output:
